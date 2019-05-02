@@ -1,0 +1,56 @@
+{
+    "name": "johnson/gebeya",
+    "description": "Drupal 8 Intro",
+    "type": "project",
+    "require": {
+        "cweagans/composer-patches": "^1.6.0",
+        "drupal/admin_toolbar": "^1.26",
+        "drupal/console": "^1.0.2",
+        "drupal/core": "^8.6",
+        "drupal/devel": "^2.0",
+        "drush/drush": "^9.6",
+        "hussainweb/drupal-composer-helper": "^1.0"
+    },
+    "require-dev": {
+        "behat/mink": "~1.7",
+        "behat/mink-goutte-driver": "~1.2",
+        "jcalderonzumba/gastonjs": "~1.0.2",
+        "jcalderonzumba/mink-phantomjs-driver": "~0.3.1",
+        "mikey179/vfsstream": "~1.2",
+        "phpunit/phpunit": ">=4.8.28 <5",
+        "symfony/css-selector": "~2.8"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mohamed Johnson",
+            "email": "mohamedjohnson31@gmail.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    ],
+    "minimum-stability": "dev",
+    "extra": {
+        "drupal-composer-helper": {
+            "web-prefix": "web"
+        },
+        "enable-patching": true,
+        "installer-paths": {
+            "web/core": [
+                "type:drupal-core"
+            ]
+        }
+    },
+    "prefer-stable": true,
+    "conflict": {
+        "drupal/drupal": "*"
+    },
+    "config": {
+        "sort-packages": true,
+        "optimize-autoloader": true
+    }
+}

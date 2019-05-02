@@ -1,0 +1,16 @@
+<?php 
+	
+	/**
+	 * Implements hook_form_alter().
+	 */
+
+	use Drupal\Core\Form\FormStateInterface;
+
+	function demo_form_alter(&$form, FormStateInterface &$form_state, $form_id) {
+
+	  if ($form_id == 'comment_comment_form') {
+	  	// t is the translation function
+	  	$form['actions']['submit']['#value'] = t('Comment');
+	  }
+
+	}

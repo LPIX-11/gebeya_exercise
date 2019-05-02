@@ -1,0 +1,4 @@
+name: drupal8-intoduction
+recipe: drupal8
+config:
+  webroot: web
